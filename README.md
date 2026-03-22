@@ -1,29 +1,63 @@
-📊 Amazon Product Review Dashboard
-📌 Task 3: Dashboard Development
-📖 Project Description
+ Task 4: Sentiment Analysis
 
-This project focuses on building an interactive dashboard using Power BI to visualize Amazon product review data. The dashboard presents key insights such as rating distribution, sentiment analysis, product trends, and customer feedback patterns. It helps users understand data easily and make informed decisions.
-🎯 Objective
+ 📌 Project Overview
+This project performs **sentiment analysis on textual data** such as product reviews using **Natural Language Processing (NLP)** techniques. It aims to classify text into positive or negative sentiments and extract meaningful insights from customer feedback.
 
-To create a fully functional interactive dashboard that transforms raw data into meaningful and actionable insights using visualization tools like Power BI.
+ 🎯 Objective
+To analyze textual data and build a model that can automatically determine the sentiment of user reviews.
+
 🛠️ Tools & Technologies
-Power BI 📊
-Data Visualization
-Data Cleaning & Transformation
-📂 Dataset
 
+* Python 🐍
+* NLP (Natural Language Processing)
+* Pandas & NumPy
+* Scikit-learn
+* Jupyter Notebook
+  
+ 📂 Dataset
 The dataset includes:
-Product ID
-Review Scores (1–5)
-Sentiment (Positive/Negative)
-Time of Reviews
+* Text reviews
+* Sentiment labels (Positive/Negative)
+* Additional metadata
 
-📊 Dashboard Features
-⭐ Rating Distribution – Count of reviews by score
-😊 Sentiment Analysis – Positive vs Negative reviews
-📈 Time Trends – Review activity over time
-🏆 Top Products – Most reviewed products
-🎛️ Interactive Filters – Filter by score, sentiment, and product
-📌 KPIs:
-Average Rating
-Most Reviewed Product
+ ⚙️ Workflow
+1. Data Loading
+2. Text Preprocessing
+
+   * Lowercasing
+   * Removing stopwords
+   * Tokenization
+   * Cleaning text
+3. Feature Extraction
+   * TF-IDF / Count Vectorization
+4. Model Building
+   * Machine Learning algorithms (e.g., Logistic Regression, Naive Bayes)
+5. Model Evaluation
+
+📊 Key Features
+
+* Text cleaning and preprocessing
+* Sentiment classification
+* Visualization of sentiment distribution
+* Model accuracy evaluation
+
+ 📈 Insights
+* Majority of reviews show overall customer sentiment
+* Model effectively classifies positive and negative text
+* Helps understand user opinions and feedback trends
+
+
+2. Open `Task4.ipynb` in Jupyter Notebook
+3. Run all cells step-by-step
+
+📌 Deliverable
+A complete notebook demonstrating:
+* Data preprocessing
+* NLP model implementation
+* Sentiment analysis results and insights
+
+Conclusion
+This project showcases how NLP techniques can be used to analyze textual data and extract valuable insights for decision-making.
+
+
+⭐ Feel free to explore and improve this project!
